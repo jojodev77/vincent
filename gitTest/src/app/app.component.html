@@ -1,0 +1,73 @@
+ 
+<!--
+<nav class="navbar navbar-inverse" style=" background-color:black">
+    <div class="container-fluid" id="menua">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" >
+            <li><a  class="nav-link active" id="accueil1" ><span routerLink="accueil">ACCUEIL</span></a></li>
+            <li><a  class="nav-link active" id="resume1" ><span routerLink="resume">RESUME</span></a></li>
+            <li> <a  class="nav-link" id="pp1" ><span routerLink="pp">LES PREMIERES PAGES</span></a> </li>
+            <li>  <a  class="nav-link" id="photo1" ><span routerLink="photo">PHOTOS</span></a></li>
+            <li>   <a  class="nav-link" id="evideo1"><span routerLink="video">EXTRAITS VIDEO</span></a></li>
+            <li>   <a  class="nav-link" id="contact1"><span  routerLink="contact">CONTACT</span></a></li>
+            <li class="mm"> <a  class="nav-link" id="commander1" ><span routerLink="commander">COMMANDER</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         
+          
+        </ul>
+      </div>
+    </div>
+  </nav>     
+-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+ 
+    </a>
+  
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"><mat-icon> format_align_justify</mat-icon></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse"
+         [ngClass]="{ 'show': navbarOpen }" id="menua">
+      <ul class="navbar-nav  mr-auto" id="menua">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="accueil"  (click)="toggleNavbar()">ACCUEIL</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" routerLink="resume" (click)="toggleNavbar()">RESUME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="pp"  (click)="toggleNavbar()">LES PREMIERES PAGES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="photo"  (click)="toggleNavbar()">PHOTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="video"  (click)="toggleNavbar()">EXTRAITS VIDEO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact"  (click)="toggleNavbar()">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="commander"  (click)="toggleNavbar()">COMMANDER</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<router-outlet></router-outlet>
+<audio src="assets\BO Site internet 7.mp3" controls autoplay loop loop="true" id="audio" ></audio>
