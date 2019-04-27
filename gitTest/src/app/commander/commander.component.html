@@ -1,0 +1,21 @@
+<mat-card>
+    <h4><img src="assets\livre10.PNG" class="Responsive image " id="montant"></h4>
+<h1 id="prix"> 16 EUROS + 2 EUROS DE FRAIS DE PORT</h1>
+ <div class="achat">
+    <h4 id="cgv"> </h4>   
+
+    <button (click)="affichezAcheter()">ACCEPTER LES CONDITIONS DE VENTE</button>
+    <input type="checkbox" [checked]="isChecked" (change)="toggle()" >
+
+        <div id="achat">
+            <script type="text/javascript" src="https://secure.payplug.com/static/button/scripts/payplug.js"></script><a href="https://secure.payplug.com/p/jwfO4" target="_blank" base_url="https://secure.payplug.com"  id="acheter">ACHETER</a>
+ </div>
+ 
+          </div>
+         <div id="info">
+<h3>280 pages</h3>
+<h3> 14cm x 21cm</h3>
+         </div>
+          <a id="motifcolor" href="assets\CONDITIONS.pdf" download="Pacman_Kiwi">CGV</a>
+          <a href="assets\INFOS.pdf" download="Pacman_Kiwi" id="motifcolor2" class="motifcolor2"> Mention legales</a>
+</mat-card>
