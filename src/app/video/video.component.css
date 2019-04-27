@@ -1,0 +1,27 @@
+mat-card {
+    width:40%;
+    height: 60%;
+    margin-left: 25%;
+    background-color: black;
+    margin-top: 9%;
+}
+video {
+    width: 90%;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+@media  (max-width: 700px){
+
+    mat-card {
+        margin-top: 10%;
+        margin-left: -15%;
+        background-color: black;
+    }
+    video {
+        width: 90%;
+        height: 90%;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+}
